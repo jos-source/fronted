@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Animación con CSS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  /* Configuración de la vista y el contenedor */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; /* Scroll snapping */
+  scroll-behavior: smooth;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  scroll-snap-align: start;
+  transform: scale(0.8);
+  opacity: 0.5;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.section:nth-child(odd) {
+  background: #1e3a8a; /* Azul */
+}
+
+.section:nth-child(even) {
+  background: #3b82f6; /* Azul claro */
+}
+
+/* Efecto visible cuando la sección está en el centro del viewport */
+.scroll-container:focus-within .section {
+  transform: scale(1);
+  opacity: 1;
+}
+  
+</style>
+<body>
+  <div class="scroll-container">
+    <section class="section">Sección 1</section>
+    <section class="section">Sección 2</section>
+    <section class="section">Sección 3</section>
+    <section class="section">Sección 4</section>
+  </div>
+</body>
+</html>

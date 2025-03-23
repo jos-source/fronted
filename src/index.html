@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansiedad</title>
+  <link rel="stylesheet" href="/dist/css/output.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <link rel="icon" href="./assets/icons/estres.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./assets/js/main.js"></script>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- Navbar -->
+  <div class="navbar fixed top-0 z-50 bg-white shadow-md w-full">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a href="#inicio" class="font-poppins no-underline hover:underline">Inicio</a></li>
+          <li><a  href="#? class="font-poppins no-underline hover:underline">¿Qué es la Ansiedad?</a></li>
+          <li><a href="#sintomas" class="font-poppins no-underline hover:underline">Síntomas</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost text-xl text-primary font-bold font-poppins" href="#">
+        <img src="./assets/icons/estres.png" class="w-15 h-12" alt="Logo" loading="lazy">Ansiedad
+      </a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="#inicio" class="font-poppins font-bold text-blue hover:bg-white">Inicio</a></li>
+        <li><a href="#?" class="font-poppins hover:bg-white hover:text-blue">¿Qué es la Ansiedad?</a></li>
+        <li><a href="#sintomas" class="font-poppins hover:bg-white hover:text-blue">Síntomas</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn m-1 font-poppins bg-blue rounded-full text-white">Contacta a
+          <img src="./assets/icons/angulo-pequeno-hacia-abajo.svg" class="h-10 w-5 text-white" alt="">
+        </div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li><a class="font-poppins hover:bg-blue hover:text-white" href="https://difbenitojuarez.gob.mx/">DIF</a></li>
+          <li><a class="font-poppins hover:bg-blue hover:text-white" href="https://cgc.qroo.gob.mx/uneme-cisame-brindan-atencion-integral-a-personas-con-problemas-de-salud-mental/">Uneme.Cisame</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero min-h-screen relative mt-4 rounded-lg" id="inicio">
+    <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover">
+      <source src="./assets/videos/introduccion.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content text-center relative z-10 text-white top-20">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-4xl sm:text-5xl md:text-6xl font-bold font-montserrat text-white">Comprendiendo <br> la Ansiedad</h1>
+        <p class="mb-5 font-sans text-sm sm:text-base">Una guía para entender y gestionar la ansiedad.</p>
+        <a id="sintomas">
+        <button class="btn btn-primary mt-4">Leer más</button></a>
+        <div class="relative rounded-xl overflow-auto p-8 top-16">
+          <div class="flex justify-center">
+            <button>
+              <div class="animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
+                <svg class="w-6 h-6 text-primary" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-0 left-0 w-full h-full bg-black/50 z-0"></div>
+  </div>
+
+  <!-- ¿Qué es la Ansiedad? -->
+  <div class="hero bg-base-200" id="?" aria-labelledby="que-es">
+    <div class="hero-content flex-col lg:flex-row min-h-screen gap-8 scroll-what">
+      <img src="./assets/img/images.png" class="max-w-sm rounded-lg animate-float w-full lg:w-auto" />
+      <div>
+        <h1 class="text-4xl font-bold text-blue italic drop-shadow-md" id="que-es">¿Qué es la ansiedad?</h1>
+        <p class="py-6 text-justify font-serif text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+          La ansiedad es una respuesta emocional y fisiológica normal ante situaciones de estrés o peligro, pero cuando se presenta de manera excesiva o crónica, puede convertirse en un trastorno. En términos simples, es una sensación de preocupación, nerviosismo o temor frente a algo que puede suceder, incluso cuando no hay amenaza.
+        </p>
+        <a href="https://medlineplus.gov/spanish/anxiety.html">
+          <button class="btn btn-primary hover:text-white rounded-full group grow px-12">
+            Leer más
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden h-6 w-6 transition-transform duration-300 group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1 md:inline-block">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+            </svg>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Sintomas y Causas -->
+  <div class="hero bg-sky-200 min-h-screen" id="sintomas">
+    <div class="hero-content flex-col lg:flex-row-reverse gap-8 scroll-sintomas">
+      <img src="./assets/img/sintomas.png" class="max-w-sm animate-float" alt="Imagen ilustrativa" />
+      <div>
+        <h1 class="text-4xl font-bold text-blue italic drop-shadow-md">Causas y síntomas de la ansiedad!</h1>
+        <div role="tablist" class="tabs tabs-lifted mt-10">
+          <input type="radio" name="my_tabs_2" role="tab" class="tab border-b-2 border-blue-500 text-blue-600 font-semibold px-4 py-2" aria-label="síntomas" />
+          <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
+            <p class="mb-4 font-serif">En línea con lo que sucede con las causas, cada persona puede experimentar síntomas muy diversos al sufrir ansiedad.</p>
+            <ul role="list" class="marker:text-sky-400 list-disc pl-5 space-y-3 list-inside text-blue-600 text-sm leading-relaxed font-serif">
+              <li>Preocupación excesiva</li>
+              <li>Tristeza</li>
+              <li>Baja autoestima</li>
+              <li>Sensación de peligro</li>
+              <li>Tensión muscular</li>
+              <li>Falta de concentración</li>
+              <li>Respiración acelerada</li>
+            </ul>
+          </div>
+
+          <input type="radio" name="my_tabs_2" role="tab" class="tab text-gray-600 hover:text-blue-500 px-4 py-2" aria-label="causas" checked="checked" />
+          <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6 mr-4">
+            <p class="mb-4  font-serif">Determinar las causas que provocan la ansiedad no es fácil, ya que se trata de un problema asociado a la salud mental, específico de cada persona.</p>
+            <ul role="list" class="marker:text-sky-400  font-serif  list-disc pl-5 space-y-3 list-inside text-blue-600 text-sm leading-relaxed">
+              <li>Causas genéticas</li>
+              <li>Acontecimientos vividos</li>
+              <li>Uso de medicamentos</li>
+              <li>Consumo de alcohol y drogas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Estrategias -->
+  <div class="hero bg-base-200" id="gestion-ansiedad">
+    <div class="hero-content flex-col lg:flex-row mt-9 gap-8 scroll-estrategias  font-serif">
+      <img src="./assets/img/estrategias.png" class="rounded-lg" />
+      <div>
+        <h1 class="text-4xl font-bold text-blue italic drop-shadow-md">Estrategias para Gestionar la Ansiedad!</h1>
+        <div class="grid grid-cols-1 gap-4 mt-9 md:grid-cols-2">
+          <div class="card  rounded-box h-20 flex items-center justify-center bg-sky-200">
+            Busca Apoyo Social
+          </div>
+          <div class="card  rounded-box h-20 flex items-center justify-center bg-sky-200">
+            Práctica de Respiración Profunda
+          </div>
+          <div class="card bg-sky-200 rounded-box h-20 flex items-center justify-center">
+            Actividad Física 
+          </div>
+          <div class="card bg-sky-200 rounded-box h-20 flex items-center justify-center">
+            Técnicas de Relajación Muscular
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-blue text-white text-center py-6">
+    <p>&copy; 2024 Guía de Ansiedad & Desarrollado por Jose Hau</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
